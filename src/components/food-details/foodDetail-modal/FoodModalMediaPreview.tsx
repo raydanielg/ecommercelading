@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import CustomImageContainerJs from "../../CustomImageContainer";
 
 const CustomImageContainer = CustomImageContainerJs as React.FC<any>;
+const SlickSlider = Slider as any;
 
 const buildEmbedAutoplayUrl = (url?: string | null): string | undefined => {
   if (!url) return undefined;
@@ -253,10 +254,10 @@ const FoodModalMediaPreview = ({
         },
       }}
     >
-      <Slider {...sliderSettings}>
+      <SlickSlider {...sliderSettings}>
         {hasVideo && <Box>{videoSlide}</Box>}
         {imageSlides}
-      </Slider>
+      </SlickSlider>
     </Box>
   );
 };
