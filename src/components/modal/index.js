@@ -59,6 +59,10 @@ const CustomModal = (props) => {
 CustomModal.propTypes = {
   openModal: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
+  children: PropTypes.node,
+  closeButton: PropTypes.bool,
+  maxWidth: PropTypes.string,
+  disableAutoFocus: PropTypes.bool,
 };
 
 export default CustomModal;
