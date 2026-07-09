@@ -148,6 +148,9 @@ const AppLinks = (props) => {
   );
 };
 
-AppLinks.propTypes = {};
+AppLinks.propTypes = {
+  landingPageData: PropTypes.object,
+  graybackground: PropTypes.any,
+};
 
 export default AppLinks;
