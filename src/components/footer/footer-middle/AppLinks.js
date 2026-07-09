@@ -7,6 +7,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import React from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import appleicon from "../../../../public/static/footer/apple.svg";
 import playstoreicon from "../../../../public/static/footer/playstore.svg";
