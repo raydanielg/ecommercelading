@@ -22,6 +22,8 @@ const H2 = (props) => {
 
 H2.propTypes = {
   text: PropTypes.string.isRequired,
+  textAlign: PropTypes.string,
+  component: PropTypes.any,
 };
 
 export default H2;
